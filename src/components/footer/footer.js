@@ -22,7 +22,7 @@ class FooterComponent extends Component {
 <div className="footer-bottom-wrapper">   
 <i className="fa fa-copyright">
  
-</i> 2015 Pavilion in <address className="footer-address">Bergen, NY</address><span className="footer-bottom-rights"> - All Rights Reserved - </span>
+</i> Thriving Cities<address className="footer-address">, Memphis USA</address><span className="footer-bottom-rights"> - All Rights Reserved - </span>
     </div>
     <div className="footer-bottom-wrapper">
     <a href="#d" className="generic-anchor" rel="nofollow">Terms</a> | <a href="" className="generic-anchor" rel="nofollow">Privacy</a>
