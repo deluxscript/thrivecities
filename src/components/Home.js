@@ -19,7 +19,7 @@ class Home extends Component {
 
 
   componentDidMount() {
-		fetch('http://localhost:3001/allevents')
+		fetch('https://thriveapi.herokuapp.com/allevents')
 		.then(response=> response.json())
 		.then(singleevent=> {this.setState({ events: singleevent})});
 	}

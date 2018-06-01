@@ -46,7 +46,7 @@ class Events extends Component {
 
 	onRegister = () => {
 		this.showregLoading();
-		fetch('https://localhost:3001/event', {
+		fetch('https://thriveapi.herokuapp.com/event', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
@@ -60,8 +60,9 @@ class Events extends Component {
 		.then(response => response.json())
 		.then(singleevent => {
 			if (singleevent.title) {
-				this.props.eventDetails(singleevent)
-				this.props.onRouteChange('home');
+                this.props.eventDetails(singleevent);
+                alert('Event Submitted');
+				// this.props.onRouteChange('home');
 			}
 			else {
 				this.showError();
@@ -76,7 +77,7 @@ class Events extends Component {
 
 		return(
 			<article className="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw8 center">
-				 <main className="pa4 black-80">
+				 <main className="pa4 black-80" style={{ background: 'deepskyblue'}}>
 					<div className="measure center">
 						   <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
 									  <legend className="f2 fw6 ph0 mh0">Add Event</legend>
