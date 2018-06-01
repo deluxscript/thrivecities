@@ -1,0 +1,38 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 106.77px);
+}
+
+.heroFlex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: calc(100vh - 150px);
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 435px) {
+
+    .hero {
+        height: 250px;
+    }
+    .video div:first-child {
+        width: inherit !important;
+        height: inherit !important;
+    }
+    .heroFlex {
+        display: block;
+    }
+}

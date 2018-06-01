@@ -1,0 +1,41 @@
+.logo {
+    display: flex;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.brandName {
+    color: #212326;
+}
+input:focus {
+    outline: none;
+}
+.searchbox {
+    border: 1px solid #ececec;
+}
+.search-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: black;
+}
+
+.ic {
+    display: inline;
+    float: left;
+    padding-right: 9px;
+}
+@media only screen and (min-width: 435px) {
+
+    input {
+        width: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+
+    .brandName {
+        padding-top: .5rem !important;
+    }
+}

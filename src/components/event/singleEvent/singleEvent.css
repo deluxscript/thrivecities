@@ -1,0 +1,103 @@
+/* Main card Stylings */
+.eventCard {
+    width: 340px;
+    margin: 0 40px 40px 0;
+}
+
+.bigSection, .section {
+    display: table;
+}
+
+.textcolor {
+    color: #606060;
+}
+
+.h-120 {
+    height: 120px;
+}
+
+.headerbg {
+    height: auto;
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    background: url(dot.png) center repeat-x;
+    clear: both;
+}
+
+.eventColor {
+    color: rgb(255, 68, 0);
+}
+
+.headerText {
+    background: white;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.eventCard:hover .eventdate{
+    background: rgb(51, 51, 51);
+    color: #fff;
+} 
+
+.borderLine {
+    border: 1px solid #ececec;
+    margin-top: 4px;
+}
+
+/* Date Stylings */
+.eventdate {
+    background: #ececec;
+    color: #555555;
+}
+
+.eventdate span:first-child {
+    font-weight: 300;
+}
+
+.eventdate span:nth-child(2) {
+    font-weight: 600;
+}
+
+/* Event Description Styles */
+.desc {
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+
+/* ReadMore Styles */
+.readmore {
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+.readmore a {
+    color: rgb(255, 68, 0);
+    text-decoration: none;
+
+}
+
+.eventlocation {
+    padding: 5px 16px;
+}
+
+.jc {
+    justify-content: space-around;
+}
+
+.transition-enter {
+    transform: scale(0);
+  }
+  .transition-enter-active {
+    transform: scale(1);
+    transition: transform 1000ms ease;
+  }
+  .transition-exit {
+    transform: scale(1);
+  }
+  .transition-exit-active {
+    transform: scale(0);
+    transition: transform 1000ms ease;
+  }
+  

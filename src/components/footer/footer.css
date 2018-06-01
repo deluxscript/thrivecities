@@ -1,0 +1,138 @@
+.footer {
+    border-top: 1px solid #cecece;
+    clear: both;
+    height: 250px;
+    padding: 40px 0;
+    background: #1b1c1d;
+}
+
+.footer-social-section {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .footer-social-section::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+  
+  .footer-social-overlap {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+  }
+  
+  .footer-social-connect {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .footer-social-small {
+    font-size: 0.6em;
+    padding: 0px 20px;
+  }
+  
+  .footer-social-overlap > a {
+    font-size: 3em;
+  }
+  
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0.38em;
+  }
+  
+  .footer-bottom-section {
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom-section > div:first-child {
+    margin-right: auto;
+  }
+  
+  .footer-bottom-wrapper {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .footer-address {
+    display: inline;
+    font-style: normal;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    .footer-social-section {
+      justify-content: center;
+    }
+  
+    .footer-social-section::after {
+      top: 25%;
+    }
+  
+    .footer-social-connect {
+      margin-bottom: 10px;
+      padding: 0 10px;
+    }
+  
+    .footer-social-overlap {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer-social-icons-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .footer-social-overlap > a:not(:first-child) {
+      margin-left: 20px;
+    }
+  
+    .footer-bottom-section {
+      padding: 0 5px 10px 5px;
+    }
+  
+    .footer-bottom-wrapper {
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .footer-social-overlap > a {
+      margin: auto;
+    }
+  
+    .footer-social-overlap > a:not(:first-child) {
+      margin-left: 0;
+    }
+  
+    .footer-bottom-rights {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+  
+    .footer-social-connect {
+      font-size: 2.4em;
+    }
+  
+    .footer-social-overlap > a {
+      font-size: 2.24em;
+    }
+  
+    .footer-bottom-wrapper {
+      font-size: 1.3em;
+    }
+  }
+  

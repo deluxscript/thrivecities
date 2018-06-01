@@ -1,0 +1,78 @@
+.optin-container {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 30rem;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 40px;
+  }
+  
+  .cta {
+    background:rgb(255, 68, 0);
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 1.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    .cta {
+      line-height: 1.4;
+      padding: 1.25rem 1rem;
+    }
+  }
+  
+  .form {
+    background: rgb(228, 69, 11);
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+  }
+  .form input {
+    padding: 0.75rem;
+    margin: 0;
+  }
+  .form input[type="email"] {
+    border: none;
+    font-size: 1rem;
+    flex: 1;
+    outline: rgb(255, 68, 0);
+  }
+  .form input[type="email"]:focus {
+    outline: 0.25rem solid rgb(255, 68, 0);
+  }
+  .btnsubmit {
+    background: linear-gradient(#e84263, rgb(255, 68, 0));
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+  }
+  .btnsubmit:hover {
+    background: linear-gradient(#e84667, #e63054);
+  }
+  @media screen and (max-width: 600px) {
+    .form {
+      flex-flow: row wrap;
+    }
+    .form input {
+      padding: 1rem !important;
+      margin: 0 !important;
+      flex: 100%;
+    }
+    .btnsubmit {
+      margin-top: 1rem !important;
+    }
+  }
+  
+  /* .hidden {
+    display: none;
+  } */
+  

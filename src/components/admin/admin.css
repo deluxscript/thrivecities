@@ -1,0 +1,7 @@
+
+
+@media only screen and (min-width: 435px){
+    div input {
+        width: 260px !important;
+    }
+}
